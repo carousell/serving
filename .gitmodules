@@ -1,0 +1,3 @@
+[submodule "cartfops"]
+	path = cartfops
+	url = git@github.com:carousell/cartfops.git

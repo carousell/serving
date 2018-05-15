@@ -35,3 +35,7 @@ tf_serving_workspace()
 load("@org_tensorflow//tensorflow:workspace.bzl", "check_bazel_version_at_least")
 
 check_bazel_version_at_least("0.5.4")
+#local_repository(
+#    name="cartfops",
+#    path="cartops/"
+#)

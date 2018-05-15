@@ -189,6 +189,7 @@ cc_library(
 SUPPORTED_TENSORFLOW_OPS = [
     "@org_tensorflow//tensorflow/contrib:contrib_kernels",
     "@org_tensorflow//tensorflow/contrib:contrib_ops_op_lib",
+    "//cartfops/cartfops:common_op",
 ]
 
 TENSORFLOW_DEPS = [
