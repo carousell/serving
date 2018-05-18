@@ -23,5 +23,9 @@ ADD docker/build.sh /tmp
 ADD . /serving/
 WORKDIR /serving/
 RUN /tmp/build.sh
+RUN dpkg -i ./bazel-bin/tensorflow_serving/model_servers/tensorflow-model-server_1.7.0_all.deb
+RUN bazel clean
+WORKDIR /models/
+RUN rm -rf /serving/
 #RUN /tmp/run_server.sh
 EXPOSE 8500
